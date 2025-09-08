@@ -1,4 +1,23 @@
 {
+  "configurations": [
+    {
+      "type": "cppvsdbg",
+      "request": "launch",
+      "name": "Debug Impellor",
+      "program": "${workspaceFolder}/build/${input:executableName}.exe",
+      "preLaunchTask": "cmake build",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "executableName",
+      "description": "Enter the name of your executable (default: Impellor)"
+    }
+  ],
   "name": "impellor",
   "version": "1.0.0",
   "dependencies": [
