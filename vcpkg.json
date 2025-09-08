@@ -1,27 +1,6 @@
 {
-  "configurations": [
-    {
-      "type": "cppvsdbg",
-      "request": "launch",
-      "name": "Debug Impellor",
-      "program": "${workspaceFolder}/build/${input:executableName}.exe",
-      "preLaunchTask": "cmake build",
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal"
-    }
-  ],
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "executableName",
-      "description": "Enter the name of your executable (default: Impellor)"
-    }
-  ],
-  "name": "impellor",
-  "version": "1.0.0",
-  "dependencies": [
-    "fmt",
-    "spdlog"
-  ]
+  "name": "impellor-v1",
+  "version": "0.1.0",
+  "dependencies": [],
+  "builtin-baseline": "4f6d3087685fc2b318b997acbdcabc74e9fbb57a"
 }
