@@ -9,4 +9,3 @@ int main() {
     std::cout << "Welcome, " << name << "! Impellor V2 is ready." << std::endl;
     return 0;
 }
-
