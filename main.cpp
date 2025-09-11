@@ -1,4 +1,3 @@
-// main.cpp (V3)
 #include <iostream>
 #include <filesystem>
 #include <string>
@@ -82,34 +81,4 @@ int main(int argc, char* argv[]) {
     displayMeshStats(mesh);
 
     return 0;
-}
-
-{
-  "configurations": [
-    {
-      "type": "cppvsdbg",
-      "request": "launch",
-      "name": "Debug Impellor",
-      "program": "${workspaceFolder}/build/${input:executableName}.exe",
-      "args": [
-        "${input:meshFile}"
-      ],
-      "cwd": "${workspaceFolder}",
-      "preLaunchTask": "cmake build",
-      "stopAtEntry": true,
-      "console": "integratedTerminal"
-    }
-  ],
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "executableName",
-      "description": "Enter the name of your executable (default: Impellor)"
-    },
-    {
-      "type": "promptString",
-      "id": "meshFile",
-      "description": "Enter the path to the mesh .obj file to debug"
-    }
-  ]
 }
